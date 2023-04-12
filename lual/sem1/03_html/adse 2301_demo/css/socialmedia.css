@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* Social css Document that will be used for devices with max screen  width of 480 px */
+
+/* Find source url and add correct  */
+.social-menu li a:before{
+    font-family: 'FontAwsome';
+    -webkit-font-smoothing: antialised;
+    content: '\f08e';
+}
+
+.screen-reader-text
+{
+    clip:rect(1px, 1px, 1px, 1px);
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.social-menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}

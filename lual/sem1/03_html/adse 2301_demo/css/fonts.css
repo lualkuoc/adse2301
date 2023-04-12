@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* Css document that will allow us to use webfonts in our site */
+
+/* This is code to allow us  */
+
+@font-face 
+{
+    font-family: 'BleedingCowboys';
+    src: url('../webfonts/bleeding_cowboys/bleeding_cowboys.eot');
+    src: url('../webfonts/bleeding_cowboys/bleeding_cowboys.eot') format('embedded-opentype'),
+         url('../webfonts/bleeding_cowboys/bleeding_cowboys.woff') format('woff'),
+         url('../webfonts/bleeding_cowboys/bleeding_cowboys.ttf') format('truetype'),
+         url('../webfonts/bleeding_cowboys/bleeding_cowboys.svg#BleedingCowboysRegular') format('svg');
+}
+
+@font-face 
+{
+    font-family: 'dobkinplain';
+    src: url('../webfonts/dobkin/DobkinPlain-webfont.eot');
+    src: url('../webfonts/dobkin/DobkinPlain-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../webfonts/dobkin/DobkinPlain-webfont.woff') format('woff'),
+         url('../webfonts/dobkin/DobkinPlain-webfont.ttf') format('truetype'),
+         url('../webfonts/dobkin/DobkinPlain-webfont.svg#dobkinplain') format('svg');
+}
+
+@font-face 
+{
+    font-family: 'ChopinScriptRegular';
+    src: url('chops.eot');
+    src: url('chops.eot') format('embedded-opentype'),
+         url('chops.woff') format('woff'),
+         url('chops.ttf') format('truetype'),
+         url('chops.svg#ChopinScriptRegular') format('svg');
+}
+
+
+@font-face {
+    font-family: 'cantarell';
+    src: url('../webfonts/centarel/cantarell-regular-webfont.woff2') format('woff2'),
+         url('../webfonts/centarel/cantarell-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'limelight';
+    src: url('../webfonts/limelight/limelight-webfont.woff2') format('woff2'),
+         url('../webfonts/limelight/limelight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+    

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADSE2301 Demosite - Forms</title>
+    <!-- Link our page to the main style sheet -->
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+</head>
+<body>
+    <div id="container">
+        <h1 class="page-heading"> <span class="page-heading-underline">Forms</span></h1>
+        <p>An HTML form is an interactive tool in your webpage that's made up of various controls used to collect/obtain data from your website user/visitor.&nbsp;The information is then validated, then sent to a webserver for further processing and/or storage. Examples of commonly used forms are registration/sign up forms and login/sign in forms.</p>
+        <p>An example of a registration/signup form is given below. The form will be used to collect the details of prospective employee.</p>
+
+        <form action="" id="frmRegisterEmp" name="frmRegisterEmp" method="post" enctype="multipart/form-data" title="frmRegisterEmp" accept-charset="UTF-8">
+            <fieldset>
+                <legend>
+                    Personal Details
+                </legend>
+                <p>
+                    <label for="txtFirstname">First Name *</label>
+                    <br>
+                    <input type="text" name="txtFirstname" id="txtFirstname" title="please enter your first name" placeholder="frist name" tabindex="10">
+                </p>
+                <p>
+                    <label for="txtLastname">Last Name *</label>
+                    <br>
+                    <input type="text" name="txtLastname" id="txtLastname" title="please enter your last name" placeholder="last name" tabindex="20" required>
+                </p>
+                <p>
+                    <label for="dptBirthdate">Birth Date *</label>
+                    <br>
+                    <input type="date" name="dptBirthdate" id="dptBirthdate" title="please select you date of birth" placeholder="frist name" tabindex="30" required>
+                </p>
+
+                <p>
+                <label >Gender *:</label>
+
+                <input type="radio" name="gender" id="rdomale" required tabindex="40" title="Male gender" value="Male">
+                <label for="gender">Male</label>&nbsp;&nbsp;
+                <input type="radio" name="gender" id="rdfemale" required tabindex="50" title="Female gender" value="Female">
+                <label for="gender">Female</label>
+                </p>
+                <p>
+                    <label for="txtMaritalStatus">Marital Status *</label>
+                    <br>
+                    <input type="text" name="txtMaritalStatus" id="txtMaritalStatus" title="please select your marital status" placeholder="Marital Status" list="dltStatus" tabindex="60" required>
+                    <datalist id="dltStatus">
+                        <option value="Single">Single</option>
+                        <option value="Engaged">Engaged</option>
+                        <option value="Married">Married</option>
+                        <option value="Separated">Separated</option>
+                        <option value="Divorced">Divorced</option>
+                        <option value="Complicated">Complicated</option>
+                    </datalist>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Account Details
+                </legend>
+                <p>
+                    <label for="txtUsername">Username *</label>
+                    <br>
+                    <input type="text" name="txtUsername" id="txtUsername" title="please enter your username" placeholder="username" tabindex="70" required>
+                </p>
+                <p>
+                    <label for="txtPassword">Password *</label>
+                    <br>
+                    <input type="password" name="txtPassword" id="txtPassword" title="please enter your password" placeholder="password" tabindex="80" required>
+                </p>
+                <p>
+                    <label for="txtConfirmPassword">Confirm Password *</label>
+                    <br>
+                    <input type="password" name="txtConfirmPassword" id="txtConfirmPassword" title="please re-enter your password" placeholder="confirm password" tabindex="90" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Contact Details
+                </legend>
+                
+                <p>
+                    <label for="txtPhone">Phone</label>
+                    <br>
+                    <input type="tel" name="txtPhone" id="txtPhone" title="please enter your telephone" placeholder="+254......." tabindex="100">
+                </p>
+                <p>
+                    <label for="txtEmail">Email*</label>
+                    <br>
+                    <input type="email" name="txtEmail" id="txtEmail" title="please enter your email" placeholder="example@gmail.com" tabindex="110" required>
+                </p>
+                <p>
+                    <label for="txtPostalAddress">Postal Address</label>
+                    <br>
+                    <input type="text" name="txtPostalAddress" id="txtPostalAddress" title="please enter your postal address" placeholder="P.O.Box 1234" tabindex="120">
+                </p>
+
+                <p>
+                    <label for="txtTownCity">Town/City*</label>
+                    <br>
+                    <input type="text" name="txtTownCity" id="txtTownCity" title="please enter your Town/city" placeholder="town/city" tabindex="130" required>
+                </p>
+                <p>
+                    <label for="txtCountry">Country*</label>
+                    <br>
+                    <select type="text" name="txtCountry" id="txtCountry" title="please select your country" placeholder="country" tabindex="140">
+                        <option value="Burundi">Burundi</option>
+                        <option value="Ethiopia">Ethiopia</option>
+                        <option value="Eritrea">Eritrea</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Rwanda">Rwanda</option>
+                        <option value="Tanzania">Tanzania</option>
+                        <option value="South Sudan">South Sudan</option>
+                        <option value="Uganda">Uganda</option>
+                        
+                        
+                    </select>
+                </p>
+            </fieldset>
+        </form>
+    
+        <footer class="page-footer">ADSE 2301 Copyright &copy; 2021 -
+            <!-- js insert year -->
+            <script>
+                document.write("<span>" + new Date().getFullYear() + "</span>");
+            </script>
+            <br>
+            Designed by <a href="#">Codelins</a>
+        </footer>
+    </div>
+    
+</body>
+</html>

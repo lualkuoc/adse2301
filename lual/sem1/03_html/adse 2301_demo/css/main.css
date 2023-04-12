@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* Css document with site wide rules that will be used accross all devices on all browsers. */
+
+/* Fonts */
+@import url("fonts.css");
+
+/* Import the styles from the mobile sheet for use on devices wtih max screen with of 480px. */
+@import url("mobile.css") screen and (max-width:480px);
+
+/* Import the styles from the tablet sheet for use on devices wtih min screen with of 481px. */
+@import url("tablet.css") screen and (min-width:481px);
+
+/* Import the styles from the desktop sheet for use on devices wtih min screen with of 801px. */
+@import url("desktop.css") screen and (min-width:801px);
+
+
+body{
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    font-size: 16px;
+    font-family: 'cantarell';
+    
+}
+
+#container{
+    margin: 5px auto;
+    background-color: rgba(26, 25, 25, 0.753);
+    padding: 2%;
+    border-radius: 0px 20px;
+    color: #fff;
+
+}
+
+.page-heading
+{
+    font-weight: 800;
+    font-size: 2.2em;
+    text-align: center;
+    color: #f00;
+    font-family: 'limelight';
+}
+
+.page-heading-underline
+{
+    border-bottom:medium double #fff;
+}
+
+/* style page footer */
+
+.page-footer{
+    text-align: center;
+    color: #f80;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/* style the page footer */
+.section-heading{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #f80;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+}
+
+/* add the price tags to the deserts */
+
+.price::before{
+    content: 'kes. ';
+}
+
+.price::after{
+    content: '/=';
+}
+
+/* style image containers */
+.holding-container
+{
+    width: 100%;
+    display: flex;
+    padding: 2%;
+    /* background-color: rgb(218, 172, 120); */
+    box-sizing: border-box;
+    /* flex-direction: row; */
+}
+
+.internal-container{
+    flex: 1;
+    font-size: 14px;
+}
+
+.internal-container img{
+    width: 100%;
+    border: solid #fff 3px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    /* Style the data table */
+.data-table
+{
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    color: inherit;
+}
+
+/* style the odd and even rows differently */
+
+.data-table tr:nth-child(odd)
+{background-color: rgb(209, 221, 221);}
+.data-table tr:nth-child(even)
+{background-color: rgb(80, 84, 87);}
+
+/* style the heading row differently */
+.data-table tr:first-child
+{
+    background-color: rgb(240, 190, 126);
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.2em;
+}

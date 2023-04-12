@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* Tablet Css Document that will be used for devices with min screen width of 801 px */
+
+
+/* style image containers */
+.holding-container
+{
+    flex-direction: row;
+}

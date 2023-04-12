@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* Mobile css Document that will be used for devices with max screen  width of 480 px */
+
+/* Style the document body */
+body
+{
+    background-color: aqua;
+}
+
+#container{
+    width: 90%; 
+
+}
+
+/* style image containers */
+.holding-container
+{
+    flex-direction: column;
+}
